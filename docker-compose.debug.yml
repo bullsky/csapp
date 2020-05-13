@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  csapp:
+    image: ubuntu:bionic
+    build: .
+    volumes:
+      - /root/datalab:./datalab-handout
+    ports:
+      - 3000:3000

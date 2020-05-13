@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  csapp:
+    image: ubuntu:latest
+    stdin_open: true
+    tty: true
+    working_dir: /root/csapp
+    volumes:
+      - /e/project/csapp:/root/csapp
+    # ports:
+    #   - 3000:3000
